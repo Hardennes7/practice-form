@@ -1,0 +1,42 @@
+/* fluid layout */
+.div-container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .div-container {
+        width: 80%;
+        background-color: grey;
+    }
+
+    body{
+        background-color: lightsalmon;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+/* Flexible LAyout */
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    background-color: grey;
+    padding: 20px;
+    margin: 10px;
+    flex: 1; /* This will make the items flexible */
+}
